@@ -1,4 +1,4 @@
-# This package contains metric functions and DataFrame handling modul
+# This package contains metric functions and DataFrame handling modules
 
 ## Installation
 
@@ -16,10 +16,10 @@ pip install git+https://github.com/Analyse/AnalysePredict
 {'mean': 3.0, 'median': 3.0, 'variance': 2.5, 'standard deviation': 1.58, 'min': 1.0, 'max': 5.0}
 
 >>> ss.five_num_summ([1, 2, 3, 4, 5])
-
+{'max': 5.0, 'median': 3.0, 'min': 1.0, 'q1': 1.5, 'q3': 4.5}
 ```
 
-The code adheres to [PEP8] guidelines except for the following checkers:
+The code adheres to [PEP8] guidelines.
 
 [PEP8]: https://www.python.org/dev/peps/pep-0008/ "PEP 8 -- Style Guide for Python Code"
 
