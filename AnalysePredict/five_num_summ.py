@@ -4,7 +4,6 @@ def five_num_summ(items):
 
     Args:
         list (containing non-string items)
-
     Returns:
         dict: {max, median, min, q1, q3} all rounded to 2 decimal places
 
@@ -21,10 +20,9 @@ def five_num_summ(items):
             items_length += 1  # Calculating the length of a list
 
         # Sorting out the list
-        for i in range(items_length):
-            for j in range(1,items_length):
-                if items[j-1] > items[j]:
-                    (items[j-1], items[j]) = (items[j], items[j-1])
+        for j in range(1,items_length):
+            if items[j-1] > items[j]:
+                (items[j-1], items[j]) = (items[j], items[j-1])
 
         max_num = int(items[-1] * 100) / 100
         min_num = int(items[0] * 100) / 100
