@@ -41,7 +41,7 @@ def five_num_summary(items):
             else:
                 # odd
                 return int(items[mid] * 100) / 100
-        
+      
         mid = items_length // 2 # uses the floor division to have integer returned
         
         # Calculating the lower and upper quartiles
