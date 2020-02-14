@@ -2,7 +2,9 @@
 # coding: utf-8
 
 # In[3]:
+"""
 
+"""
 
 def stop_words_remover(df):
     
@@ -14,9 +16,7 @@ def stop_words_remover(df):
         for stop_word in stop_words_dict['stopwords']:
             if stop_word in twitter_df['Without Stop Words'][i]:
                 twitter_df['Without Stop Words'][i].remove(stop_word)
-            for item in (twitter_df['Without Stop Words'][i]):
-                if str(item[0:5]) == "https":
-                    twitter_df['Without Stop Words'][i].remove(item)       
+                   
             
     return twitter_df       
 
