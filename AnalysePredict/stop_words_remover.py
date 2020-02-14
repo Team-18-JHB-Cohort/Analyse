@@ -12,24 +12,24 @@
         DataFrame
     
     Returns:
-        a culumn labeled "Without_Stop_words" with stop words removed.
+        a column labeled "Without_Stop_words" with stop words removed.
     
      
     """
 
 def stop_words_remover(df):
     
-    #
-    twitter_df['Without Stop Words'] = twitter_df['Tweets'].str.lower().str.split()
+    #Split string into list and create new column
+    df['Without Stop Words'] = df['Tweets'].str.lower().str.split()
     
-    #
-    for i in range(twitter_df['Without Stop Words'].count()):
+    #Remove stopwords from the new column
+    for i in range(df['Without Stop Words'].count()):
         for stop_word in stop_words_dict['stopwords']:
-            if stop_word in twitter_df['Without Stop Words'][i]:
-                twitter_df['Without Stop Words'][i].remove(stop_word)
+            if stop_word in df['Without Stop Words'][i]:
+                df['Without Stop Words'][i].remove(stop_word)
                    
             
-    return twitter_df       
+    return df       
 
 
 # In[ ]:
