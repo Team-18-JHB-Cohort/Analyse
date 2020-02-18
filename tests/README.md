@@ -48,4 +48,4 @@ Pull requests are welcome!
 - Akhona Stefane 
 - Lawrence Hlapa 
 - Mpho Marufu 
-- Pennelope Makhosazane
+- Pennelope Makhosazane https://github.com/makhosazane89
