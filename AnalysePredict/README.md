@@ -7,6 +7,10 @@ install the development version from GitHub:
 ```bash
 pip install git+https://github.com/Analyse/AnalysePredict
 ```
+## Import packages
+
+import numpy as np
+import pandas as pd
 
 ## Usage
 
@@ -44,7 +48,7 @@ Pull requests are welcome!
 
 ## Contributors
 
-- Marcus Moeng 
+- Marcus Moeng :https://github.com/marcusmoeng
 - Akhona Stefane 
 - Lawrence Hlapa 
 - Mpho Marufu 
