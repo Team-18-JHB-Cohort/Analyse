@@ -11,13 +11,13 @@ def stop_words_remover(df):
     
     #
     for i in range(twitter_df['Without Stop Words'].count()):
-        for stop_word in stop_words_dict['stopwords']:
-            if stop_word in twitter_df['Without Stop Words'][i]:
-                twitter_df['Without Stop Words'][i].remove(stop_word)
-            for item in (twitter_df['Without Stop Words'][i]):
-                if str(item[0:5]) == "https":
-                    twitter_df['Without Stop Words'][i].remove(item)       
-            
+        for entry in df['Without Stop Words'][i]:
+            if entry not in stop_words_dict['stopwords']:
+                new_list.append(entry)
+               
+        main_list.append(new_list)
+    new_data = pd.Series(main_list)
+    df['Without Stop Words'] = new_data 
     return twitter_df       
 
 
