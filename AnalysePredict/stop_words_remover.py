@@ -1,9 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[3]:
 
- """
+
+def stop_words_remover(df):
+  """
    Should split string in a list in rows
    Should remove stop_words in the dictionary from the dataframe
    Should create a new column labeled "without_stop_words"
@@ -16,9 +15,7 @@
     
      
     """
-
-def stop_words_remover(df):
-    
+   
     #Split string into list and create new column
     df['Without Stop Words'] = df['Tweets'].str.lower().str.split()
     
@@ -32,7 +29,7 @@ def stop_words_remover(df):
     return df       
 
 
-# In[ ]:
+
 
 
 
