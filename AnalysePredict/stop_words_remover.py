@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[3]:
-
-
 def stop_words_remover(df):
     
     #
@@ -21,7 +15,6 @@ def stop_words_remover(df):
     return twitter_df       
 
 
-# In[ ]:
 
 
 
