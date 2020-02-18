@@ -33,5 +33,5 @@ class Tests(unittest.TestCase):
         self.assertEqual(word_splitter(twitter_df.copy()))
     
     def stop_words_remover(df):
-        self.assertEqual(stop_words_remover(twitter_df.copy()))
+        self.assertEqual(stop_words_remover(twitter_df.copy()).loc[0, "Without Stop Words"], ['@bongadlulane', 'send', 'email', 'mediadesk@eskom.co.za'])
 
