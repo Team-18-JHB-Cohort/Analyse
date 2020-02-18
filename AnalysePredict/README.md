@@ -10,6 +10,7 @@ pip install git+https://github.com/Analyse/AnalysePredict
 ## Import packages
 
 import numpy as np
+
 import pandas as pd
 
 ## Usage
@@ -19,7 +20,7 @@ import pandas as pd
 >>> ap.dictionary_of_metrics([1, 2, 3, 4, 5])
 {'mean': 3.0, 'median': 3.0, 'variance': 2.5, 'standard deviation': 1.58, 'min': 1.0, 'max': 5.0}
 
->>> ss.five_num_summ([1, 2, 3, 4, 5])
+>>> ap.five_num_summ([1, 2, 3, 4, 5])
 {'max': 5.0, 'median': 3.0, 'min': 1.0, 'q1': 1.5, 'q3': 4.5}
 ```
 
