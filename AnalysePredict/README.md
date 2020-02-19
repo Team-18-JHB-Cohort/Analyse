@@ -7,7 +7,7 @@ install the development version from GitHub:
 ```bash
 pip install git+https://github.com/Analyse/AnalysePredict
 ```
-## Import packages
+## Accompanying packages
 
 import numpy as np
 
@@ -16,12 +16,18 @@ import pandas as pd
 ## Usage
 
 ```python
->>> import AnalysePredict as ap
+>>> from Analyse.AnalysePredict import A_Predict_module as ap #This module has all seven functions
 >>> ap.dictionary_of_metrics([1, 2, 3, 4, 5])
 {'mean': 3.0, 'median': 3.0, 'variance': 2.5, 'standard deviation': 1.58, 'min': 1.0, 'max': 5.0}
 
->>> ap.five_num_summ([1, 2, 3, 4, 5])
+>>> ap.five_num_summary([1, 2, 3, 4, 5])
 {'max': 5.0, 'median': 3.0, 'min': 1.0, 'q1': 1.5, 'q3': 4.5}
+
+or
+
+>>>from Analyse.AnalysePredict import dictionary_of_metrics as dm  #This option imports only one function module
+>>>dm.dictionary_of_metrics([1, 2, 3, 4, 5])
+{'mean': 3.0, 'median': 3.0, 'variance': 2.5, 'standard deviation': 1.58, 'min': 1.0, 'max': 5.0}
 ```
 
 The code adheres to [PEP8] guidelines.
