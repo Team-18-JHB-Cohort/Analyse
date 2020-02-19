@@ -6,6 +6,7 @@ from . import word_splitter
 from . import extract_municipality_hashtags
 from . import number_of_tweets_per_day
 from . import stop_words_remover
+from . import A_Predict_module
 
 
 
