@@ -10,8 +10,21 @@ def extract_municipality_hashtags(df):
         Dataframe with two columns, municipality that reflects the municipality and hashtags separately.
     
     """
+    # Importing numpy
+    import numpy as np
+    
+    # Initialising columns as nan
     df['municipality'] = np.nan
     df['hashtags'] = np.nan
+    
+    # Dictionary with manicipalities
+    mun_dict = { '@CityofCTAlerts' : 'Cape Town',
+            '@CityPowerJhb' : 'Johannesburg',
+            '@eThekwiniM' : 'eThekwini' ,
+            '@EMMInfo' : 'Ekurhuleni',
+            '@centlecutility' : 'Mangaung',
+            '@NMBmunicipality' : 'Nelson Mandela Bay',
+            '@CityTshwane' : 'Tshwane'}
     
     #Creating a column with all the mentioned municipalities.
     for i in range(0, len(df['Tweets'])):

@@ -59,6 +59,7 @@ def dictionary_of_metrics(items):
 
 ### START FUNCTION
 def five_num_summary(items):
+    
     from numpy import percentile
 
     """
@@ -105,6 +106,7 @@ def five_num_summary(items):
 
 ### START FUNCTION
 def date_parser(list_dates):
+    
     """
     takes a list of datetime strings and converts it into a list of strings with only the date
 
@@ -130,8 +132,16 @@ def date_parser(list_dates):
 
 ### START FUNCTION
 def extract_municipality_hashtags(df):
+    
     """
-
+    Returns a new dataframe with two new columns municipality and hashtags.
+    
+    Args:
+        Create new dataframe.
+      
+    Return:
+        Dataframe with two columns, municipality that reflects the municipality and hashtags separately.
+    
     """
     df['municipality'] = np.nan
     df['hashtags'] = np.nan
@@ -173,8 +183,20 @@ def extract_municipality_hashtags(df):
 
 ### START FUNCTION
 def number_of_tweets_per_day(df):
+    
     """
-
+    Returns a new dataframe, grouped by day, with the number of tweets for that day
+    
+    Args:
+        Creates new dataframe
+    
+    Returns:
+        Dataframe with two columns, Date and count of the Tweets for the date.
+    
+    Example:
+        >>> Tweets and Date :[@BongaDlulane Please send an email to mediades...] [2019-11-29 12:50:54]
+        
+        >>> Date and Tweets :2019-11-20 18
     """
     #Create open list for return result.
     dates_table = {}
@@ -203,6 +225,7 @@ def number_of_tweets_per_day(df):
 
 ### START FUNCTION
 def word_splitter(df):
+    
     """
     Splits the sentences in a dataframe's column into a list of the separate words.
 
@@ -231,11 +254,19 @@ def word_splitter(df):
 
 ### START FUNCTION
 def stop_words_remover(df):
-
+    
     """
-
-    """
-     #
+    Should split string in a list in rows
+    Should remove stop_words in the dictionary from the dataframe
+    Should create a new column labeled "without_stop_words"
+    
+    Args:
+        DataFrame
+    
+    Returns:
+        a column labeled "Without_Stop_words" with stop words removed.
+    """ 
+    
     df['Without Stop Words'] = df['Tweets'].str.lower().str.split()
     main_list = []
     #

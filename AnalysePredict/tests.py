@@ -23,8 +23,9 @@ class Tests(unittest.TestCase):
     def date_parser(list_dates):
         self.assertEqual(date_parser(dates[-3:]), ['2019-11-20', '2019-11-20', '2019-11-20'])
         
-    def extract_municipality_hashtags(df):
-        self.assertEqual(extract_municipality_hashtags(twitter_df.copy()))
+   def extract_municipality_hashtags(self):
+        self.assertEqual(extract_municipality_hashtags(df['municipality'].iloc[5:9]), ['Johannesburg', 'NaN', 'NaN','NaN']) 
+        self.assertEqual(extract_municipality_hashtags(df['hashtags'].iloc[5:9]), ['NaN', ['#fridaymotivation', '#eskomexpoisf'],['#eskommpumalanga'],'NaN'])
         
     def number_of_tweets_per_day(df):
         self.assertEqual(number_of_tweets_per_day(twitter_df.copy()).loc['2019-11-22', 'Tweets']), '25')
