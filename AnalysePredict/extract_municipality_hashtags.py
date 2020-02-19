@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 ### START FUNCTION
 def extract_municipality_hashtags(df):
     """
