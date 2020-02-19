@@ -13,3 +13,7 @@ class Tests(unittest.TestCase):
 
     def test_five_num_summary(self):
         self.assertEqual(five_num_summary([1, 2, 3, 4, 5, 6]), {'max': 6.0, 'median': 3.5, 'min': 1.0, 'q1': 2.0, 'q3': 5.0})
+    
+    def extract_municipality_hashtags(self):
+        self.assertEqual(extract_municipality_hashtags(df1['municipality'].iloc[5,9]), ['Johannesburg', 'NaN', 'NaN','NaN']) 
+        self.assertEqual(extract_municipality_hashtags(df1['hashtags'].iloc[5:9]), [NaN, ['#fridaymotivation', '#eskomexpoisf'],['#eskommpumalanga'],'NaN'])
