@@ -41,7 +41,7 @@ The code adheres to [PEP8] guidelines.
 | Function                           | Example                                                                  |
 |------------------------------------|--------------------------------------------------------------------------|
 | [dictionary of metrics]            | `dictionary_of_metrics([1, 2, 3, 4, 5])`                                 |
-| [five_num summ]                    | `five_num_summ([1, 2, 3, 4, 5])`                                         |
+| [five_num summary]                 | `five_num_summary([1, 2, 3, 4, 5])`                                      |
 | [data parser]                      | `data_parser(["2019-11-29 12:50:54"])`                                   |
 | [stop_words_remover]               | `stop_words_remover(twitter_df.copy()).loc[42, "Without Stop Words"]`    |                        | [word_splitter]                    | `word_splitter(twitter_df.copy()).loc[37, "Split Tweets"]`               |
 | [number_of_tweets_per_day]         | `number_of_tweets_per_day(twitter_df.copy()).loc['2019-11-22','Tweets']  |
