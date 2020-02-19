@@ -1,0 +1,16 @@
+README.md
+setup.py
+Analyse.egg-info/PKG-INFO
+Analyse.egg-info/SOURCES.txt
+Analyse.egg-info/dependency_links.txt
+Analyse.egg-info/requires.txt
+Analyse.egg-info/top_level.txt
+AnalysePredict/A_Predict_module.py
+AnalysePredict/__init__.py
+AnalysePredict/date_parser.py
+AnalysePredict/dictionary_of_metrics.py
+AnalysePredict/extract_municipality_hashtags.py
+AnalysePredict/five_num_summary.py
+AnalysePredict/number_of_tweets_per_day.py
+AnalysePredict/stop_words_remover.py
+AnalysePredict/word_splitter.py
