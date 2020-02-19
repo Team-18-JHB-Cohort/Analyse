@@ -25,8 +25,8 @@ import pandas as pd
 
 or
 
-from Analyse.AnalysePredict import dictionary_of_metrics as dm  #This option imports only one function module
- dm.dictionary_of_metrics([1, 2, 3, 4, 5])
+>>>from Analyse.AnalysePredict import dictionary_of_metrics as dm  #This option imports only one function module
+>>>dm.dictionary_of_metrics([1, 2, 3, 4, 5])
 {'mean': 3.0, 'median': 3.0, 'variance': 2.5, 'standard deviation': 1.58, 'min': 1.0, 'max': 5.0}
 ```
 
