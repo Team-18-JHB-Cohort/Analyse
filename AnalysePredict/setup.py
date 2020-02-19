@@ -11,7 +11,7 @@ setuptools.setup(
     description="This package contains metric functions",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Team-18-JHB-Cohort/Analyse.git",
+    url="https://github.com/Team-18-JHB-Cohort/Analyse/tree/master/AnalysePredict",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
