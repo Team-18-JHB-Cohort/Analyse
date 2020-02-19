@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="A_Predict",
+    name="A_Predict_module",
     version="0.0.1",
     author="Team_18_JHB_2020",
     author_email="marcusmoeng@yahoo.com",
