@@ -131,7 +131,14 @@ def date_parser(list_dates):
 ### START FUNCTION
 def extract_municipality_hashtags(df):
     """
-
+    Returns a new dataframe with two new columns municipality and hashtags.
+    
+    Args:
+        Create new dataframe.
+      
+    Return:
+        Dataframe with two columns, municipality that reflects the municipality and hashtags separately.
+    
     """
     df['municipality'] = np.nan
     df['hashtags'] = np.nan
