@@ -27,10 +27,10 @@ class Tests(unittest.TestCase):
         self.assertEqual(extract_municipality_hashtags(twitter_df.copy()))
         
     def number_of_tweets_per_day(df):
-        self.assertEqual(number_of_tweets_per_day(twitter_df.copy()))
+        self.assertEqual(number_of_tweets_per_day(twitter_df.copy()).loc['2019-11-22', 'Tweets']), '25')
     
     def word_splitter(df):
-        self.assertEqual(word_splitter(twitter_df.copy()))
+        self.assertEqual(word_splitter(word_splitter(twitter_df.copy()).loc[37, "Split Tweets"],  ['rt', '@overstrandmuni:', 'we', 'are', 'currently', 'experiencing', 'a', 'power', 'outage', 'in', 'pearly', 'beach', 'due', 'to', 'a', 'cable', 'fault.', 'power', 'is', 'estimated', 'to', 'be', 'restored', 'a…']
     
     def stop_words_remover(df):
         self.assertEqual(stop_words_remover(twitter_df.copy()).loc[0, "Without Stop Words"], ['@bongadlulane', 'send', 'email', 'mediadesk@eskom.co.za'])
