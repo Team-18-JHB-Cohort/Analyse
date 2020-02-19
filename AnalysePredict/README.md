@@ -7,7 +7,7 @@ install the development version from GitHub:
 ```bash
 pip install git+https://github.com/Analyse/AnalysePredict
 ```
-## Import packages
+## Accompanying packages
 
 import numpy as np
 
@@ -16,12 +16,18 @@ import pandas as pd
 ## Usage
 
 ```python
->>> import AnalysePredict as ap
+>>> from Analyse.AnalysePredict import A_Predict_module as ap #This module has all seven functions
 >>> ap.dictionary_of_metrics([1, 2, 3, 4, 5])
 {'mean': 3.0, 'median': 3.0, 'variance': 2.5, 'standard deviation': 1.58, 'min': 1.0, 'max': 5.0}
 
->>> ap.five_num_summ([1, 2, 3, 4, 5])
+>>> ap.five_num_summary([1, 2, 3, 4, 5])
 {'max': 5.0, 'median': 3.0, 'min': 1.0, 'q1': 1.5, 'q3': 4.5}
+
+or
+
+>>>from Analyse.AnalysePredict import dictionary_of_metrics as dm  #This option imports only one function module
+>>>dm.dictionary_of_metrics([1, 2, 3, 4, 5])
+{'mean': 3.0, 'median': 3.0, 'variance': 2.5, 'standard deviation': 1.58, 'min': 1.0, 'max': 5.0}
 ```
 
 The code adheres to [PEP8] guidelines.
@@ -32,13 +38,14 @@ The code adheres to [PEP8] guidelines.
 
 ### Descriptive statistics and measure of variability
 
-| Function                           | Example                                                              |
-|------------------------------------|----------------------------------------------------------------------|
-| [dictionary of metrics]            | `dictionary_of_metrics([1, 2, 3, 4, 5])`                             |
-| [five_num summ]                    | `five_num_summ([1, 2, 3, 4, 5])`                                     |
-| [data parser]                      | `data_parser(["2019-11-29 12:50:54"])`                               |
-| [stop_words_remover]               | `stop_words_remover(twitter_df.copy()).loc[42, "Without Stop Words"]`|                                                              
-
+| Function                           | Example                                                                  |
+|------------------------------------|--------------------------------------------------------------------------|
+| [dictionary of metrics]            | `dictionary_of_metrics([1, 2, 3, 4, 5])`                                 |
+| [five_num summ]                    | `five_num_summ([1, 2, 3, 4, 5])`                                         |
+| [data parser]                      | `data_parser(["2019-11-29 12:50:54"])`                                   |
+| [stop_words_remover]               | `stop_words_remover(twitter_df.copy()).loc[42, "Without Stop Words"]`    |                        | [word_splitter]                    | `word_splitter(twitter_df.copy()).loc[37, "Split Tweets"]`               |
+| [number_of_tweets_per_day]         | `number_of_tweets_per_day(twitter_df.copy()).loc['2019-11-22','Tweets']  |
+| [extract_municipality_hashtags]    | `extract_municipality_hashtags(df)`                                      |
 
 
 ## Spirit and rules
@@ -53,8 +60,8 @@ Pull requests are welcome!
 ## Contributors
 
 - Marcus Moeng :https://github.com/marcusmoeng
-- Akhona Stefane 
-- Lawrence Hlapa 
+- Akhona Stefane :https://github.com/Akhona-Stafane/Analyse
+- Lawrence Hlapa :https://github.com/LawrenceHlapa/Analyse
 - Mpho Marufu  :https://github.com/Mpho-Marufu
 - Pennelope Makhosazane :https://github.com/makhosazane89
 
