@@ -13,3 +13,9 @@ class Tests(unittest.TestCase):
 
     def test_five_num_summary(self):
         self.assertEqual(five_num_summary([1, 2, 3, 4, 5, 6]), {'max': 6.0, 'median': 3.5, 'min': 1.0, 'q1': 2.0, 'q3': 5.0})
+        
+    def word_splitter(self):
+        self.assertEqual(word_splitter(twitter_df.copy()))
+    
+    def number_of_tweets_per_day(df):
+        self.assertEqual(number_of_tweets_per_day(twitter_df.copy()))
