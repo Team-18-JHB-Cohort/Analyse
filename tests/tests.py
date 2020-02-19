@@ -16,8 +16,8 @@ class Tests(unittest.TestCase):
 
     
     def extract_municipality_hashtags(self):
-        self.assertEqual(extract_municipality_hashtags(df1['municipality'].iloc[5,9]), ['Johannesburg', 'NaN', 'NaN','NaN']) 
-        self.assertEqual(extract_municipality_hashtags(df1['hashtags'].iloc[5:9]), [NaN, ['#fridaymotivation', '#eskomexpoisf'],['#eskommpumalanga'],'NaN'])
+        self.assertEqual(extract_municipality_hashtags(df['municipality'].iloc[5:9]), ['Johannesburg', 'NaN', 'NaN','NaN']) 
+        self.assertEqual(extract_municipality_hashtags(df['hashtags'].iloc[5:9]), ['NaN', ['#fridaymotivation', '#eskomexpoisf'],['#eskommpumalanga'],'NaN'])
         
     def word_splitter(self):
         self.assertEqual(word_splitter(twitter_df.copy()))

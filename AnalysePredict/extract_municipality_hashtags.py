@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 ### START FUNCTION
 def extract_municipality_hashtags(df):
     """
@@ -29,7 +23,7 @@ def extract_municipality_hashtags(df):
     #Create column with all hashtags.
     for i in range(0, len(df['Tweets'])):
         new_list = [] 
-        for entry in twitter_df['Tweets'][i].split():
+        for entry in df['Tweets'][i].split():
             if entry[0] == '#':
                 new_list.append(entry.lower())
                 
