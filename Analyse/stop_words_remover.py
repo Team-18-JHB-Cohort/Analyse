@@ -1,17 +1,17 @@
 
 def stop_words_remover(df):
-  """
-  Usage:
-  Should split string in a list in rows
-  Should remove stop_words in the dictionary from the dataframe
-  Should create a new column labeled "without_stop_words"
-    
-  Args:
+    """
+    Usage:
+    Should split string in a list in rows
+    Should remove stop_words in the dictionary from the dataframe
+    Should create a new column labeled "without_stop_words"
+
+    Args:
        DataFrame
-  Returns:
+    Returns:
        a column labeled "Without_Stop_words" with stop words removed.
-  """
-  stop_words_dict = {'stopwords':['where', 'done', 'if', 'before', 'll', 'very', 'keep', 'something', 'nothing', 'thereupon', 'may',
+    """
+    stop_words_dict = {'stopwords':['where', 'done', 'if', 'before', 'll', 'very', 'keep', 'something', 'nothing', 'thereupon', 'may',
                                   'why', '’s', 'therefore', 'you', 'with', 'towards', 'make', 'really', 'few', 'former', 'during',
                                   'mine', 'do', 'would', 'of', 'off', 'six', 'yourself', 'becoming', 'through', 'seeming', 'hence',
                                   'us', 'anywhere', 'regarding', 'whole', 'down', 'seem', 'whereas', 'to', 'their', 'various', 
@@ -42,6 +42,7 @@ def stop_words_remover(df):
                                   'afterwards', 'fifty', 'i', 'itself', 'n‘t', 'him', 'could', 'front', 'within', '‘re', 'back', 
                                   'such', 'already', 'several', 'side', 'whence', 'me', 'same', 'were', 'it', 'every', 'third', 
                                   'together']}
+
     #split string and create new column.
 
     df['Without Stop Words'] = df['Tweets'].str.lower().str.split()
