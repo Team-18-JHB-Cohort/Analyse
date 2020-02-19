@@ -61,7 +61,7 @@ Pull requests are welcome!
 
 - Marcus Moeng :https://github.com/marcusmoeng
 - Akhona Stefane 
-- Lawrence Hlapa 
+- Lawrence Hlapa :https://github.com/LawrenceHlapa/Analyse
 - Mpho Marufu  :https://github.com/Mpho-Marufu
 - Pennelope Makhosazane :https://github.com/makhosazane89
 
