@@ -18,7 +18,7 @@ def extract_municipality_hashtags(df):
     df['hashtags'] = np.nan
     
     # Dictionary with manicipalities
-    municipality_dict = { '@CityofCTAlerts' : 'Cape Town',
+    mun_dict = { '@CityofCTAlerts' : 'Cape Town',
             '@CityPowerJhb' : 'Johannesburg',
             '@eThekwiniM' : 'eThekwini' ,
             '@EMMInfo' : 'Ekurhuleni',
