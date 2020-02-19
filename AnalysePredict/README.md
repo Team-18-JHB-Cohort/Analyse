@@ -45,7 +45,7 @@ The code adheres to [PEP8] guidelines.
 | [data parser]                      | `data_parser(["2019-11-29 12:50:54"])`                                   |
 | [stop_words_remover]               | `stop_words_remover(twitter_df.copy()).loc[42, "Without Stop Words"]`    |                        | [word_splitter]                    | `word_splitter(twitter_df.copy()).loc[37, "Split Tweets"]`               |
 | [number_of_tweets_per_day]         | `number_of_tweets_per_day(twitter_df.copy()).loc['2019-11-22','Tweets']  |
-
+| [extract_municipality_hashtags]    | `extract_municipality_hashtags(df)`                                      |
 
 
 ## Spirit and rules
