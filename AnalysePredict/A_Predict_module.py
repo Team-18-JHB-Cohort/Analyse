@@ -59,6 +59,7 @@ def dictionary_of_metrics(items):
 
 ### START FUNCTION
 def five_num_summary(items):
+    
     from numpy import percentile
 
     """
@@ -105,6 +106,7 @@ def five_num_summary(items):
 
 ### START FUNCTION
 def date_parser(list_dates):
+    
     """
     takes a list of datetime strings and converts it into a list of strings with only the date
 
@@ -130,6 +132,7 @@ def date_parser(list_dates):
 
 ### START FUNCTION
 def extract_municipality_hashtags(df):
+    
     """
     Returns a new dataframe with two new columns municipality and hashtags.
     
@@ -180,6 +183,7 @@ def extract_municipality_hashtags(df):
 
 ### START FUNCTION
 def number_of_tweets_per_day(df):
+    
     """
     Returns a new dataframe, grouped by day, with the number of tweets for that day
     
@@ -221,6 +225,7 @@ def number_of_tweets_per_day(df):
 
 ### START FUNCTION
 def word_splitter(df):
+    
     """
     Splits the sentences in a dataframe's column into a list of the separate words.
 
@@ -248,7 +253,8 @@ def word_splitter(df):
 
 
 ### START FUNCTION
-def stop_words_remover(df):    
+def stop_words_remover(df):
+    
     """
     Should split string in a list in rows
     Should remove stop_words in the dictionary from the dataframe
