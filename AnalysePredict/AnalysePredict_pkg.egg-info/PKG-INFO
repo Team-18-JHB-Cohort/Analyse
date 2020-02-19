@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: AnalysePredict-pkg
+Version: 0.0.1
+Summary: This package contains metric functions
+Home-page: https://github.com/Team-18-JHB-Cohort/Analyse
+Author: Team_18_JHB_2020
+Author-email: marcusmoeng@yahoo.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
