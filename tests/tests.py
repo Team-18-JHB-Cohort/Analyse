@@ -20,7 +20,7 @@ class Tests(unittest.TestCase):
         self.assertEqual(extract_municipality_hashtags(df['hashtags'].iloc[5:9]), ['NaN', ['#fridaymotivation', '#eskomexpoisf'],['#eskommpumalanga'],'NaN'])
         
     def word_splitter(self):
-        self.assertEqual(word_splitter(twitter_df.copy()))
+        self.assertEqual(word_splitter(df2['Split Tweets'].iloc[0]), ['@bongadlulane', 'please', 'send', 'an', 'email', 'to', 'mediadesk@eskom.co.za'])
     
     def number_of_tweets_per_day(df):
-        self.assertEqual(number_of_tweets_per_day(twitter_df.copy()))
+        self.assertEqual(number_of_tweets_per_day(df1['Tweets'].loc['2019-11-20']), '18')
