@@ -60,7 +60,7 @@ Pull requests are welcome!
 ## Contributors
 
 - Marcus Moeng :https://github.com/marcusmoeng
-- Akhona Stefane 
+- Akhona Stefane :https://github.com/Akhona-Stafane/Analyse
 - Lawrence Hlapa :https://github.com/LawrenceHlapa/Analyse
 - Mpho Marufu  :https://github.com/Mpho-Marufu
 - Pennelope Makhosazane :https://github.com/makhosazane89
