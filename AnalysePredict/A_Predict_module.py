@@ -181,7 +181,18 @@ def extract_municipality_hashtags(df):
 ### START FUNCTION
 def number_of_tweets_per_day(df):
     """
-
+    Returns a new dataframe, grouped by day, with the number of tweets for that day
+    
+    Args:
+        Creates new dataframe
+    
+    Returns:
+        Dataframe with two columns, Date and count of the Tweets for the date.
+    
+    Example:
+        >>> Tweets and Date :[@BongaDlulane Please send an email to mediades...] [2019-11-29 12:50:54]
+        
+        >>> Date and Tweets :2019-11-20 18
     """
     #Create open list for return result.
     dates_table = {}
@@ -237,12 +248,19 @@ def word_splitter(df):
 
 
 ### START FUNCTION
-def stop_words_remover(df):
-
+def stop_words_remover(df):    
     """
-
-    """
-     #
+    Should split string in a list in rows
+    Should remove stop_words in the dictionary from the dataframe
+    Should create a new column labeled "without_stop_words"
+    
+    Args:
+        DataFrame
+    
+    Returns:
+        a column labeled "Without_Stop_words" with stop words removed.
+    """ 
+    
     df['Without Stop Words'] = df['Tweets'].str.lower().str.split()
     main_list = []
     #
