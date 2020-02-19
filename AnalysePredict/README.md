@@ -32,10 +32,13 @@ The code adheres to [PEP8] guidelines.
 
 ### Descriptive statistics and measure of variability
 
-| Function                           | Example                                                           |
-|------------------------------------|-------------------------------------------------------------------|
-| [dictionary of metrics]            | `dictionary_of_metrics([1, 2, 3, 4, 5])`                          |
-| [five_num summ]                    | `five_num_summ([1, 2, 3, 4, 5)`                                   |
+| Function                           | Example                                                              |
+|------------------------------------|----------------------------------------------------------------------|
+| [dictionary of metrics]            | `dictionary_of_metrics([1, 2, 3, 4, 5])`                             |
+| [five_num summ]                    | `five_num_summ([1, 2, 3, 4, 5])`                                     |
+| [data parser]                      | `data_parser(["2019-11-29 12:50:54"])`                               |
+| [stop_words_remover]               | `stop_words_remover(twitter_df.copy()).loc[42, "Without Stop Words"]`|                                                              
+
 
 
 ## Spirit and rules
@@ -52,5 +55,6 @@ Pull requests are welcome!
 - Marcus Moeng :https://github.com/marcusmoeng
 - Akhona Stefane 
 - Lawrence Hlapa 
-- Mpho Marufu 
-- Pennelope Makhosazane
+- Mpho Marufu  :https://github.com/Mpho-Marufu
+- Pennelope Makhosazane :https://github.com/makhosazane89
+
