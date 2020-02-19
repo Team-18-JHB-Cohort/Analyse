@@ -49,6 +49,7 @@ def stop_words_remover(df):
     main_list = []
     #removes words from the 'Tweets' column and deposits them into a new column called 'Without Stop Words'.
     for i in range(df['Without Stop Words'].count()):
+        new_data = []
         for entry in df['Without Stop Words'][i]:
             if entry not in stop_words_dict['stopwords']:
                 new_list.append(entry)
